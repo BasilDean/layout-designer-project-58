@@ -45,3 +45,69 @@ section {
   max-width: 1110px;
   margin: 100px auto;
 }
+
+.background {
+  position: relative;
+}
+
+.background::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.2;
+}
+
+.header {
+  position: relative;
+}
+
+.row {
+  display: flex;
+}
+
+.header-img {
+  position: absolute;
+  height: 525px;
+  top: -55px;
+  right: -270px;
+  z-index: -1;
+}
+
+.orange {
+  color: var(--main);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.col {
+  width: 50%;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+
+.button {
+  padding: 12px 24px;
+  background-color: var(--main);
+  text-transform: uppercase;
+  color: var(--white);
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.header-desc {
+  margin-top: 177px;
+}
+
+.header-button {
+  margin-top: 20px;
+}
