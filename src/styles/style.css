@@ -145,3 +145,46 @@ section {
   margin-top: 30px;
   margin-bottom: -184px;
 }
+
+.dark {
+  background-color: var(--dark-main);
+  color: white;
+}
+
+.navigation nav {
+  padding-top: 100px;
+}
+
+.navigation-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  list-style: none;
+}
+
+.navigationItem {
+  background-color: #F5F4F0;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+}
+
+.navigationItem-number {
+  margin-bottom: 40px;
+  font-size: 64px;
+  font-family: var(--font-title);
+  line-height: 1;
+  color: var(--dark-main);
+}
+
+.navigationItem-title {
+  margin-bottom: 12px;
+  font-size: 34px;
+  color: var(--main);
+  font-family: var(--font-title);
+  line-height: 41px;
+}
+
+.navigationItem--desc {
+  color: var(--dark);
+}
