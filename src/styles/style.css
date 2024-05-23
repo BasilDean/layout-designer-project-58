@@ -47,6 +47,7 @@ section {
   margin: 0 auto;
   padding: 100px 0;
   position: relative;
+  z-index: 2;
 }
 
 .background {
@@ -67,7 +68,7 @@ section {
 
 .header {
   position: relative;
-  background-color: #F5F4F0;
+  background-color: var(--light);
 }
 
 .row {
@@ -132,7 +133,7 @@ section {
 
 .what-is-text {
   font-family: var(--font-base);
-  font-size: 16px;
+  font-size: var(--font-size);
   font-weight: 400;
   line-height: 25.6px;
   text-align: center;
@@ -163,7 +164,7 @@ section {
 }
 
 .navigationItem {
-  background-color: #F5F4F0;
+  background-color: var(--light);
   display: flex;
   flex-direction: column;
   padding: 24px;
@@ -183,8 +184,85 @@ section {
   color: var(--main);
   font-family: var(--font-title);
   line-height: 41px;
+  text-decoration: none;
 }
 
 .navigationItem--desc {
+  color: var(--dark);
+}
+
+.ikea__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.ikea__pic {
+  width: calc(50% - 15px);
+  background-color: #fff;
+  box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
+}
+
+.ikea__pic img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.ikea__content {
+  width: calc(50% - 15px);
+  box-sizing: border-box;
+}
+
+.ikea__suptitle {
+  font-family: var(--font-title);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28.8px;
+  text-align: left;
+  color: var(--dark-transparent);
+}
+
+.ikea__title {
+  font-family: var(--font-title);
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 72px;
+  text-align: left;
+  margin-bottom: 30px;
+  color: var(--font-color);
+}
+
+.ikea__text {
+  font-family: var(--font-title);
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 40.8px;
+  text-align: left;
+  color: var(--font-color);
+}
+
+.ikea__h2 {
+  width: 100%;
+  margin-top: 100px;
+  background-color: #B09A81;
+  font-family: var(--font-base);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16.8px;
+  text-align: left;
+  text-transform: uppercase;
+  color: var(--white);
+  padding: 5px 10px;
+  margin-bottom: 20px;
+}
+
+.ikea__desc {
+  width: calc(50% - 15px);
+  font-family: var(--font-base);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25.6px;
+  text-align: left;
   color: var(--dark);
 }
