@@ -66,6 +66,10 @@ section {
   z-index: 1;
 }
 
+.background-brown {
+  background-color: var(--brown);
+}
+
 .header {
   position: relative;
   background-color: var(--light);
@@ -198,7 +202,6 @@ section {
 }
 
 .ikea__pic {
-  width: calc(50% - 15px);
   background-color: #fff;
   box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.15);
   box-sizing: border-box;
@@ -210,11 +213,10 @@ section {
 }
 
 .ikea__content {
-  width: calc(50% - 15px);
   box-sizing: border-box;
 }
 
-.ikea__suptitle {
+.suptitle {
   font-family: var(--font-title);
   font-size: 24px;
   font-weight: 400;
@@ -223,7 +225,7 @@ section {
   color: var(--dark-transparent);
 }
 
-.ikea__title {
+.section-title {
   font-family: var(--font-title);
   font-size: 60px;
   font-weight: 400;
@@ -233,7 +235,7 @@ section {
   color: var(--font-color);
 }
 
-.ikea__text {
+.section-desc {
   font-family: var(--font-title);
   font-size: 34px;
   font-weight: 400;
@@ -242,10 +244,9 @@ section {
   color: var(--font-color);
 }
 
-.ikea__h2 {
+.section-h2 {
   width: 100%;
-  margin-top: 100px;
-  background-color: #B09A81;
+  background-color: var(--brown);
   font-family: var(--font-base);
   font-size: 14px;
   font-weight: 700;
@@ -254,15 +255,27 @@ section {
   text-transform: uppercase;
   color: var(--white);
   padding: 5px 10px;
-  margin-bottom: 20px;
+  margin: 100px 15px 20px;
 }
 
-.ikea__desc {
-  width: calc(50% - 15px);
+.section-h2-white {
+  background-color: var(--white);
+  color: var(--brown);
+}
+
+.section-text {
   font-family: var(--font-base);
   font-size: 16px;
   font-weight: 400;
   line-height: 25.6px;
   text-align: left;
   color: var(--dark);
+}
+
+.white-transpatent {
+  color: var(--white-transpatent);
+}
+
+.white {
+  color: var(--white);
 }
