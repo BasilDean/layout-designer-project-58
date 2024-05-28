@@ -279,3 +279,14 @@ section {
 .white {
   color: var(--white);
 }
+
+
+.distortion-pic {
+  background-color: var(--white);
+  box-shadow: 0px 16px 32px 0px #00000026;
+}
+
+.distortion-pic img {
+  width: 100%;
+  vertical-align: middle;
+}
