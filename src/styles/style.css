@@ -52,6 +52,7 @@ section {
 
 .background {
   position: relative;
+  background-color: var(--light);
 }
 
 .background::before {
@@ -289,4 +290,81 @@ section {
 .distortion-pic img {
   width: 100%;
   vertical-align: middle;
+}
+
+.subscribe {
+  background-color: var(--dark-main);
+  margin-top: 100px;
+  padding: 38px 55px 55px;
+}
+
+.subscribe-title {
+  color: var(--white);
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 40.8px;
+  text-align: left;
+}
+
+footer {
+  background-color: var(--white);
+}
+
+.subscribe-form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.subscribe-label {
+  width: 100%;
+  color: var(--white);
+  font-family: var(--font-base);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28.8px;
+  text-align: left;
+  margin-bottom: 9px;
+}
+
+.subscribe-input {
+  width: calc(100% - 70px);
+  height: 50px;
+  background-color: var(--white);
+  border: 1px solid #E3E3E3;
+  padding: 15px;
+  color: #757575;
+  box-sizing: border-box;
+}
+
+.subscribe-btn {
+  background-color: var(--main);
+  height: 50px;
+  width: 70px;
+  border: none;
+}
+
+.subscribe-rules {
+  font-family: var(--font-base);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 19.2px;
+  text-align: left;
+  color: var(--white);
+}
+
+.subscribe-rules a {
+  color: inherit;
+}
+
+.copyright {
+  margin-top: 60px;
+  font-size: 14px;
+  text-align: center;
+  padding: 0;
+  margin-bottom: 95px;
+}
+
+.copyright-item {
+  margin-bottom: 16px;
 }
